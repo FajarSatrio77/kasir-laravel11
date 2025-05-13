@@ -14,7 +14,7 @@ Aplikasi kasir berbasis web menggunakan Laravel + Livewire.
 
 1. **Clone repository**
    ```bash
-   git clone <repo-anda>
+   git clone https://github.com/FajarSatrio77/kasir-laravel11.git
    cd kasir-laravel
    ```
 
@@ -50,4 +50,4 @@ Aplikasi kasir berbasis web menggunakan Laravel + Livewire.
 
 ## Catatan
 - Proyek ini masih dalam pengembangan, fitur dan tampilan dapat berubah sewaktu-waktu.
-- Silakan laporkan bug atau saran melalui issues.
+- Silakan laporkan bug atau saran melalui issues di repository ini.
