@@ -1,6 +1,7 @@
 # Kasir Laravel
 
-Aplikasi kasir berbasis web menggunakan Laravel + Livewire.
+Aplikasi kasir berbasis web menggunakan Laravel + Livewire Dengan bootstrap 5.
+
 
 > **Status:** 🚧 Masih dalam tahap pengembangan
 
