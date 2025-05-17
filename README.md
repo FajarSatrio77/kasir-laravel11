@@ -1,9 +1,11 @@
-# Kasir App - Aplikasi Kasir Sederhana
+# KasirKu - Aplikasi Kasir Sederhana
 
 Aplikasi kasir sederhana yang dibangun dengan Laravel dan Livewire. Aplikasi ini memungkinkan pengguna untuk mengelola produk, transaksi, dan laporan penjualan dengan mudah.
 
 
 > **Status:** 🚧 Masih dalam tahap pengembangan
+
+
 
 ## Fitur
 
@@ -26,8 +28,8 @@ Aplikasi kasir sederhana yang dibangun dengan Laravel dan Livewire. Aplikasi ini
 
 1. Clone repository ini:
 ```bash
-git clone https://github.com/username/kasir-laravel.git
-cd kasir-laravel
+git clone https://github.com/FajarSatrio77/kasir-laravel11.git
+cd kasir-laravel11
 ```
 
 2. Install dependencies PHP menggunakan Composer:
@@ -51,22 +53,12 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-6. Konfigurasi database di file .env:
-```env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=kasir_db
-DB_USERNAME=root
-DB_PASSWORD=
-```
-
-7. Jalankan migrasi database:
+6. Jalankan migrasi database:
 ```bash
 php artisan migrate
 ```
 
-8. Jalankan seeder untuk membuat user admin default:
+7. Jalankan seeder untuk membuat user admin default:
 ```bash
 php artisan db:seed
 ```
@@ -143,17 +135,7 @@ kasir-laravel/
 - [Font Awesome](https://fontawesome.com) - Icons
 - [MySQL](https://www.mysql.com) - Database
 
-## Kontribusi
 
-1. Fork repository
-2. Buat branch baru (`git checkout -b fitur-baru`)
-3. Commit perubahan (`git commit -m 'Menambahkan fitur baru'`)
-4. Push ke branch (`git push origin fitur-baru`)
-5. Buat Pull Request
-
-## Lisensi
-
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
 ## Kontak
 
