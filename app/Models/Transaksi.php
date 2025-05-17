@@ -3,11 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\detailTransaksi;
 
-class Produk extends Model
+class Transaksi extends Model
 {
-    protected $fillable = ['name', 'kode', 'harga', 'stok'];
-
+    protected $fillable = ['kode','total', 'status'];
     public function detailTransaksi()
     {
         return $this->hasMany(DetailTransaksi::class);

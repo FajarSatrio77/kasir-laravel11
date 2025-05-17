@@ -30,8 +30,8 @@
                                 <thead class="table-dark">
                                     <tr>
                                         <th class="text-center" style="width: 50px">No</th>
-                                        <th>Nama Produk</th>
                                         <th>Kode</th>
+                                        <th>Nama Produk</th>
                                         <th class="text-end">Harga</th>
                                         <th class="text-center">Stok</th>
                                         <th class="text-center" style="width: 200px">Aksi</th>
@@ -41,8 +41,8 @@
                                     @foreach ($semuaProduk as $produk)
                                         <tr>
                                             <td class="text-center">{{ $loop->iteration }}</td>
-                                            <td>{{ $produk->name }}</td>
                                             <td>{{ $produk->kode }}</td>
+                                            <td>{{ $produk->name }}</td>
                                             <td class="text-end">Rp {{ number_format($produk->harga, 0, ',', '.') }}</td>
                                             <td class="text-center">
                                                 <span class="badge {{ $produk->stok > 0 ? 'bg-success' : 'bg-danger' }}">

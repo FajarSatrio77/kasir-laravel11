@@ -11,10 +11,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 route::get('/home', Beranda::class)->middleware(['auth'])->name('home');
 route::get('/user', User::class)->middleware(['auth'])->name('user');
 route::get('/produk', Produk::class)->middleware(['auth'])->name('produk');
 route::get('/transaksi', Transaksi::class)->middleware(['auth'])->name('transaksi');
 route::get('/laporan', Laporan::class)->middleware(['auth'])->name('laporan');
+Route::get('/cetak', [App\Http\Controllers\CetakController::class, 'index'])->name('cetak');

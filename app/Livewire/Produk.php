@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Models\Produk as ModelProduk;
 use App\Models\User as ModelUser;
 use Livewire\Component;
+use Illuminate\Support\Facades\Auth;
 
 class Produk extends Component
 {
@@ -14,6 +15,13 @@ class Produk extends Component
     public $harga;
     public $stok;
     public $produkTerpilih;
+
+    public function mount()
+    {
+        if(Auth::user()->peran != 'admin'){
+            abort(403);
+        }
+    }
 
 public function pilihEdit($id)
 {

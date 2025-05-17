@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\User as UserModel;
+use Illuminate\Support\Facades\Auth;
 
 class User extends Component
 {
@@ -13,6 +14,13 @@ class User extends Component
     public $password;
     public $peran;
     public $penggunaTerpilih;
+
+    public function mount()
+    {
+        if(Auth::user()->peran != 'admin'){
+            abort(403);
+        }
+    }
 
 public function pilihEdit($id)
 {
